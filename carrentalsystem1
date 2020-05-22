@@ -1,0 +1,661 @@
+#include<iostream>
+#include<stdlib.h>
+#include<ctime>
+#include<fstream>
+#include<conio.h>
+using namespace std;
+void store();
+void counter();
+void empty();
+void price();
+class project
+{
+	private:
+		int m;
+	public:
+		project()
+		{
+			cout<<"\t\t\t\t\twelcome to our car store"<<endl;
+			cout<<"\t\t\t\t\t\tom shivay"<<endl;
+			
+		}
+	       
+		void details()
+		{
+			long long int phn;
+			char name[20];
+			char address[30];
+			ofstream fout;
+			fout.open("h.txt",ios::app);
+			cout<<"____________________________________________________________________________________________________________________________________________________";
+			fout<<"_______________________________________________________________________________";
+			cout<<"\nenter your name:";
+			cin.getline(name,30);
+			fout<<"\nthe name of the person who is taking car is:"<<name<<endl;
+			cout<<"put your address:";
+			cin.getline(address,50);
+			fout<<"the address of the person is:"<<address<<endl;
+			cout<<"enter you phone number:";
+			cin>>phn;
+			fout<<"the phone no of the "<< name <<" is"<<phn<<endl;
+			getch();
+			system("cls");
+			
+			
+		}
+	
+};
+class project2: public project
+{
+  	
+};
+enum month
+	{
+		january=31,february=28,march=31,april=30,may,june=30,july,august=31,september=30,october,november=30,december
+	};
+	int c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0;
+	int sum=0;
+int main()
+{
+
+	project p2;
+	p2.details();
+	store();
+}
+void store()
+	{
+	//	c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0;
+		int a,b,s,n1,n2,n3,n4,n5; 
+		
+		int z=3600;
+		int y=4800;
+		int x=6000;
+		ofstream fout;
+		fout.open("h.txt",ios::app);
+		
+		cout<<"1.menu for cars"<<endl;
+		cout<<"2.about us"<<endl;
+		cout<<"enter input:";
+		cin>>s;
+		system("cls");
+		switch(s)
+		{
+			case 1:
+				{
+				 	cout<<"choose how many seater car you want:"<<endl;
+					cout<<"1. 5 seater."<<endl;
+					cout<<"2. 7 seater."<<endl;
+					cout<<"3. 10 seater."<<endl;
+					cout<<"enter input:";
+					cin>>n1;
+					system("cls");
+					switch(n1)
+					{
+						case 1:
+							{
+								cout<<"here are some 5 seater cars:"<<endl;
+								cout<<"choose car:"<<endl;
+								cout<<"1.alto"<<endl;
+								cout<<"2.wagnor"<<endl;
+								cout<<"3.ritz"<<endl;
+								cout<<"4.i20"<<endl;
+								cout<<"5.swift dezire"<<endl;
+				        			cin>>n2;
+				        			system("cls");
+								switch(n2)
+								{
+								       case 1:
+									{
+										cout<<"so you have choose alto:"<<endl;
+										cout<<"price="<<z<<endl;
+										cout<<"how many alto cars do you want:";
+										cin>>a;
+										c=z*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<c<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<c<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();
+										counter();
+										}
+										break;
+									}	
+									case 2:
+									{
+										cout<<"so you have choose wagnor:"<<endl;
+										cout<<"price="<<z<<endl;
+										cout<<"how many wagnor cars do you want:";
+										cin>>a;
+										d=z*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<d<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<d<<"rs."<<endl;
+										//cout<<"enter 1 one if you want more car:";
+										//cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();
+										counter();
+										}
+										break;
+										
+									}	
+									case 3:
+									{
+										cout<<"so you have choose ritz:"<<endl;
+										cout<<"price="<<z<<endl;
+										cout<<"how many ritz cars do you want:";
+										cin>>a;
+										e=z*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<e<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<e<<"rs."<<endl;
+										//cout<<"enter 1 one if you want more car:";
+										//cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+									}
+									case 4:
+									{
+										cout<<"so you have choose i20"<<endl;
+										cout<<"price="<<z<<endl;
+										cout<<"how many i20 cars do you want:";
+										cin>>a;
+										f=z*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<f<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<f<<"rs."<<endl;
+										//cout<<"enter 1 one if you want more car:";
+										//cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();
+										counter();
+										}
+										break;
+									}
+									case 5:
+									{
+										cout<<"so you have choose swift dezire:"<<endl;
+										cout<<"price="<<z<<endl;
+										cout<<"how many swift dezire cars do you want:";
+										cin>>a;
+										g=z*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<g<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<g<<"rs."<<endl;
+										//cout<<"enter 1 one if you want more car:";
+										//cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();
+										counter();
+										}
+										break;
+									}
+									
+								}
+							}
+							break;
+						case 2:
+							{
+								cout<<"here are some 7 seater cars:"<<endl;
+								cout<<"choose car:";
+								cout<<"1.innova"<<endl;
+								cout<<"2.safari"<<endl;
+								cout<<"3.Bolero"<<endl;
+								cout<<"4.scorpio"<<endl;
+								cout<<"5.fortuner"<<endl;
+								cin>>n3;
+				        			system("cls");
+								switch(n3)
+								{
+								       case 1:
+									{
+										cout<<"so you have choose innova:"<<endl;
+										cout<<"price="<<y<<endl;
+										cout<<"how many innova cars do you want:";
+										cin>>a;
+										h=y*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<h<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<h<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+										
+									}	
+									case 2:
+									{
+										cout<<"so you have choose safari:"<<endl;
+										cout<<"price="<<y<<endl;
+										cout<<"how many safari cars do you want:";
+										cin>>a;
+										i=y*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<i<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<i<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+									}	
+									case 3:
+									{
+										cout<<"so you have choose bolero:"<<endl;
+										cout<<"price="<<y<<endl;
+										cout<<"how many bolero cars do you want:";
+										cin>>a;
+										j=y*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<j<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<j<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+									}
+									case 4:
+									{
+										cout<<"so you have choose scorpio"<<endl;
+										cout<<"price="<<y<<endl;
+										cout<<"how many scorpio cars do you want:";
+										cin>>a;
+										k=y*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<k<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<k<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+									}
+									case 5:
+									{
+										cout<<"so you have choose fortuner:"<<endl;
+										cout<<"price="<<y<<endl;
+										cout<<"how many fortuner cars do you want:";
+										cin>>a;
+										l=y*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<l<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<l<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+									}	
+								}
+							}break;
+							
+								case 3:
+								{
+									cout<<"here are some 10 seater cars:"<<endl;
+									cout<<"choose car:"<<endl;
+									cout<<"1.toyota commuter van"<<endl;
+									cout<<"2.volkswagen multivan"<<endl;
+									cout<<"3.nissan minivan"<<endl;
+									cin>>n4;
+									system("cls");
+									switch(n4)
+									{
+								       case 1:
+									{
+										cout<<"so you have choose toyota commuter van:"<<endl;
+										cout<<"price="<<x<<endl;
+										cout<<"how many toyota commuter van cars do you want:";
+										cin>>a;
+										m=x*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<m<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<m<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+									}	
+									case 2:
+									{
+										cout<<"so you have choose volkswagon multivan:"<<endl;
+										cout<<"price="<<x<<endl;
+										cout<<"how many volkswagen multivan cars do you want:";
+										cin>>a;
+										n=x*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<n<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<n<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+										
+									}	
+									case 3:
+									{
+										cout<<"so you have choose nissan minivan:"<<endl;
+										cout<<"price="<<x<<endl;
+										cout<<"how many nissan multivan cars do you want:";
+										cin>>a;
+										o=x*a;
+										cout<<"the price of the "<<a<<" car for one day is:"<<o<<"rs."<<endl;
+										fout<<"the price of the "<<a<<" car for one day is:"<<o<<"rs."<<endl;
+									//	cout<<"enter 1 one if you want more car:";
+									//	cin>>b;
+										if(b==1)
+										{
+											store();
+										}
+										else
+										{
+										price();	
+										counter();
+										}
+										break;
+									}
+									break;
+								}
+						}
+					}
+					break;
+				}
+		case 2:
+			{
+				int z;
+				cout<<"Here we are welcoming you on are store:\nwe are providing you with different types of cars.\nfor any enquiry:\nphn no.:-9634207788\nyou also can mail on our addres:parthmakkar01@gmail.com";
+				cout<<"\n\nif you want to take car press 1:";
+				cin>>z;
+				if(z==1)
+				{
+					store();
+					counter();
+				}
+				else
+				{
+				}
+			}
+		}
+		
+		
+		
+	}
+void counter()
+{
+	
+	cout<<"the total price for the one day of cars is:"<<sum<<endl;
+	ofstream fout;
+	fout.open("h.txt",ios::app);
+	int day,month;
+	time_t now=time(0);
+	tm *ltm=localtime(&now);
+	int d=ltm->tm_mday;
+	int m=1+ltm->tm_mon;
+	cout<<"today is the "<<d<<" day of ";
+	cout<<m<<" month"<<endl;
+	cout<<"enter the day and month till you want the vehicle:";
+	cin>>day>>month;
+	if(m==month)
+	{
+		if(day>d)
+		{
+		int total=day-d;
+		cout<<"the total days for which you want car is:"<<total<<endl;
+		cout<<"the total money for the "<<total<<" days is total days multiply total money of one day:"<<sum *total;
+		fout<<"\nthe total money for the "<<total<<" days is total days multiply total money of one day:"<<sum *total;
+		fout<<"the total days for which you are taking the car:"<<total<<endl;
+		}
+		else
+		{
+		cout<<"you have put the wrong date";
+		empty();
+		}
+	}
+	else if(m!=month)
+	{
+		if((month-m)==1)
+		{
+		switch(m)
+		{
+			price();
+			case 1:
+				{
+					
+				       int p=january-d;
+					p=p+day;
+					cout<<"the total days for which you are taking the car:"<<p<<endl<<endl;				
+					cout<<"the total money for the "<<p<<" days is total days multiply total money of one day:"<<sum *p;
+					fout<<"the total days for which you are taking the car:"<<p<<endl;
+					fout<<"the total money for the "<<p<<" days is total days multiply total money of one day:"<<sum *p;
+					break;	
+				}
+			case 2:
+				{
+					int p1=february-d;
+					p1=p1+day;
+					cout<<"total days are for which you are taking the car:"<<p1<<endl;
+					cout<<"the total money for the "<<p1<<" days is total days multiply total money of one day:"<<sum *p1;
+					fout<<"the total days for which you are taking the car:"<<p1<<endl;
+					fout<<"the total money for the "<<p1<<" days is total days multiply total money of one day:"<<sum *p1;
+					break;
+				}
+			case 3:
+				{
+					int p2=march-d;
+					p2=p2+day;
+					cout<<"total days are for which you are taking the car:"<<p2<<endl;
+					cout<<"the total money for the "<<p2<<" days is total days multiply total money of one day:"<<sum *p2;
+					fout<<"total days are for which you are taking the car:"<<p2<<endl;
+					fout<<"the total money for the "<<p2<<" days is total days multiply total money of one day:"<<sum *p2;
+					break;
+				}
+			case 4:
+				{
+					int p3=april-d;
+					p3=p3+day;
+					cout<<"total days are for which you are taking the car:"<<p3<<endl;
+					cout<<"the total money for the "<<p3<<" days is total days multiply total money of one day:"<<sum *p3;
+					fout<<"total days are for which you are taking the car:"<<p3<<endl;
+					fout<<"the total money for the "<<p3<<" days is total days multiply total money of one day:"<<sum *p3;
+					break;
+				}
+			case 5:
+				{
+					int p4=may-d;
+					p4=p4+day;
+					cout<<"total days are for which you are taking the car:"<<p4<<endl;
+					cout<<"the total money for the "<<p4<<" days is total days multiply total money of one day:"<<sum *p4;
+					fout<<"the total days for which you are taking the car:"<<p4<<endl;
+					fout<<"the total money for the "<<p4<<" days is total days multiply total money of one day:"<<sum *p4;
+					break;
+				}
+			case 6:
+				{
+					int p5=june-d;
+					p5=p5+day;
+					cout<<"total days are for which you are taking the car:"<<p5<<endl;
+					cout<<"the total money for the "<<p5<<" days is total days multiply total money of one day:"<<sum *p5;
+					fout<<"the total days for which you are taking the car:"<<p5<<endl;
+					fout<<"the total money for the "<<p5<<" days is total days multiply total money of one day:"<<sum *p5;
+					break;
+				}
+			case 7:
+				{
+					int p6=july-d;
+					p6=p6+day;
+					cout<<"total days are for which you are taking the car:"<<p6<<endl;
+					cout<<"the total money for the "<<p6<<" days is total days multiply total money of one day:"<<sum *p6;
+					fout<<"the total days for which you are taking the car:"<<p6<<endl;
+					fout<<"the total money for the "<<p6<<" days is total days multiply total money of one day:"<<sum *p6;
+					break;
+				}
+			case 8:
+				{
+					int p7=august-d;
+					p7=p7+day;
+					cout<<"total days are for which you are taking the car:"<<p7<<endl;
+					cout<<"the total money for the "<<p7<<" days is total days multiply total money of one day:"<<sum *p7;
+					fout<<"the total days for which you are taking the car:"<<p7<<endl;
+					fout<<"the total money for the "<<p7<<" days is total days multiply total money of one day:"<<sum *p7;
+					break;
+				}
+			case 9:
+				{
+					int p8=september-d;
+					p8=p8+day;
+					cout<<"total days are for which you are taking the car:"<<p8<<endl;
+					cout<<"the total money for the "<<p8<<" days is total days multiply total money of one day:"<<sum *p8;
+					fout<<"the total days for which you are taking the car:"<<p8<<endl;
+					fout<<"the total money for the "<<p8<<" days is total days multiply total money of one day:"<<sum *p8;
+					break;
+				}
+			case 10:
+				{
+					int p9=october-d;
+					p9=p9+day;
+					cout<<"total days are for which you are taking the car:"<<p9<<endl;
+					cout<<"the total money for the "<<p9<<" days is total days multiply total money of one day:"<<sum *p9;
+					fout<<"the total days for which you are taking the car:"<<p9<<endl;
+					fout<<"the total money for the "<<p9<<" days is total days multiply total money of one day:"<<sum *p9;
+					break;
+				}
+			case 11:
+				{
+					int p10=november-d;
+					p10=p10+day;
+					cout<<"total days are for which you are taking the car:"<<p10<<endl;
+					cout<<"the total money for the "<<p10<<" days is total days multiply total money of one day:"<<sum *p10;
+					fout<<"the total days for which you are taking the car:"<<p10<<endl;
+					fout<<"the total money for the "<<p10<<" days is total days multiply total money of one day:"<<sum *p10;
+					break;
+				}
+			case 12:
+				{
+					int p11=december-d;
+					p11=p11+day;
+					cout<<"total days are for which you are taking the car:"<<p11<<endl;
+					cout<<"the total money for the "<<p11<<" days is total days multiply total money of one day:"<<sum *p11;
+					fout<<"the total days for which you are taking the car:"<<p11<<endl;
+					fout<<"the total money for the "<<p11<<" days is total days multiply total money of one day:"<<sum *p11;
+					
+					break;
+				}
+		}
+		}
+		else
+		{
+			cout<<"the month difference is greater than 1 so we can't rent you the car";
+			cout<<"you can only take the car upto next month from the current month";
+		}
+		
+		
+	
+		
+	}
+	
+}	
+
+void price()
+{
+	sum=sum+c+d+e+f+g+h+i+j+k+l+m+n+o;
+}
+void empty()
+{
+	
+}
+		void details()
+		{
+			long long int phn;
+			char name[20];
+			char address[30];
+			ofstream fout;
+			fout.open("h.txt",ios::app);
+			cout<<"____________________________________________________________________________________________________________________________________________________";
+			fout<<"_______________________________________________________________________________";
+			cout<<"\nenter your name:";
+			cin.getline(name,30);
+			fout<<"\nthe name of the person who is taking car is:"<<name<<endl;
+			cout<<"put your address:";
+			cin.getline(address,50);
+			fout<<"the address of the person is:"<<address<<endl;
+			cout<<"enter you phone number:";
+			cin>>phn;
+			fout<<"the phone no of the "<< name <<" is"<<phn<<endl;
+			getch();
+			system("cls");
+			
+			
+		}
+		
+	
+	
